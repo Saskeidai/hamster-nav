@@ -17,7 +17,6 @@ public class WebConfiguration implements WebMvcConfigurer {
 
     //添加拦截器
 
-/*
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         //注册
@@ -25,6 +24,10 @@ public class WebConfiguration implements WebMvcConfigurer {
                 //拦截路径
                 .addPathPatterns("/**")
                 //白名单路径
-                .excludePathPatterns("/","/index","/login","","/static/*","/css/*","/js/*","/img/*?");
-    }*/
+                .excludePathPatterns(
+                        "/nav",
+                        "/","/index",
+                                        "/login","/static/*","/css/*","/js/*","/images/*","/common/*","/Sass/*"
+                ,"/common/css/*","/common/fonts/*","/common/images/*","/common/logo/*","/common/js/*","/common/images/logo/*");
+    }
 }

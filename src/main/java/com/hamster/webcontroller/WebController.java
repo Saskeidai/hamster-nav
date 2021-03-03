@@ -2,6 +2,7 @@ package com.hamster.webcontroller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 //web页面控制
 @Controller
@@ -11,6 +12,12 @@ public class WebController {
     @RequestMapping({"/","/index"})
     public String index(){
         return "index";
+    }
+
+    //导航
+    @RequestMapping({"/nav"})
+    public String nav(){
+        return "home";
     }
 
     //登录

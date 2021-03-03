@@ -1,0 +1,22 @@
+html {
+    font-size: 80px;
+}
+
+$no:15;
+@media (max-width: 575.98px) {
+    html {
+        font-size: 575.98px / $no;
+    }
+}
+
+@media (min-width: 576px) {
+    html {
+        font-size: 576px / $no;
+    }
+}
+
+@media (min-width: 992px) {
+    html {
+        font-size: 992px / $no;
+    }
+}

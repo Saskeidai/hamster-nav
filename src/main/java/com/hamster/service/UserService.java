@@ -15,4 +15,9 @@ public class UserService {
         return userMapper.sel(id);
     }
 
+    //登录业务
+    public User login(String userName,String passWord){
+        return userMapper.login(userName,passWord);
+    }
+
 }

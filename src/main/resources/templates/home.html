@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仓鼠导航</title>
+    <link rel="icon" th:href="@{/common/favicon.ico}">
+    <link rel="stylesheet" th:href="@{/css/home.min.css}">
+    <link rel="stylesheet" th:href="@{/css/base.css}">
+    <link rel="stylesheet" th:href="@{/common/fonts/iconfont.css}">
+    <script th:src="@{/common/js/indexSideList.js}"></script>
+    <script th:src="@{/common/js/jquery.min.js}"></script>
+    <script th:src="@{/js/home.js}"></script>
+    <script th:src="@{/js/search.js}"></script>
+    <!-- bootstrop样式加载 -->
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+            <!-- 标题 -->
+            <div class="sidebar_title">
+                <a href="javascript:;">
+                    <h1>仓鼠导航</h1>
+                </a>
+            </div>
+            <!-- 内容 -->
+            <section class="sidebar_container">
+            </section>
+        </aside>
+        <!-- 主体内容 -->
+        <main>
+            <header>
+                <h5>仓鼠起始页</h5>
+                <div class="search">
+                    <form action="">
+                        <input type="text">
+                        <button class="backgroudB">搜索</button>
+                    </form>
+                </div>
+            </header>
+            <section>
+                <div class="main_items">
+                    <div class="main_item">
+                        <!-- 主体内容 -->
+                        <div class="main_item_content">
+                            <div class="main_item_content_logo">
+                                <img src="https://www.baidu.com/favicon.ico" alt="">
+                            </div>
+                            <div class="main_item_content_introduce">
+                                <h5>百度网站</h5>
+                                <div>
+                                    <span>
+                                        精选各个语言经典案例，每道题目配解题思路、详细代码、运行结果，细化编程每一步，关注嗨客实战，编程不迷茫。
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 内容操作 -->
+                        <ul class="main_item_operation">
+                            <li class="cp">
+                                <a href="javascript:;">
+                                    <span class="iconfont icon-fenxiang"></span>
+                                </a>
+                                <input type="text" id="copy" style="display: none;" />
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="url">
+                                    <span class="iconfont icon-jinru"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

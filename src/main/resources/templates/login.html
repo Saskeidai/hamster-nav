@@ -1,11 +1,49 @@
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html xmlns="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仓鼠导航——登录|注册</title>
+    <link rel="icon" th:href="@{/common/favicon.ico}">
+    <link rel="stylesheet" th:href="@{/css/base.css}">
+    <link rel="stylesheet" th:href="@{/css/common.min.css}">
+    <link rel="stylesheet" th:href="@{/common/fonts/iconfont.css}">
+    <link rel="stylesheet" th:href="@{/css/login.min.css}">
 </head>
+
 <body>
-    <h1>登录页面</h1>
-    <p th:text="${msg}" style="color: red" th:if="${not #strings.isEmpty(msg)}"></p>
+    <div class="container">
+        <div class="container_left">
+            <div class="circle">
+                <div class="name">
+                    <h1>仓鼠导航</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container_Right">
+            <div class="login_frame">
+                <div class="login_title">
+                    <h3>login</h3>
+                </div>
+                <form action="/user/login" method="POST">
+                    <div class="name_text">
+                        <i class="iconfont icon-icon-"></i>
+                        <input type="text" name="userName" placeholder="用户名/邮箱">
+                    </div>
+                    <div class="password">
+                        <i class="iconfont icon-mima"></i>
+                        <input type="password" name="passWord" placeholder="密码">
+                    </div>
+
+                    <div class="submit"><input type="submit" value="登录"></div>
+                </form>
+                <div class="register">
+                    <span>立即注册</span>
+                    <span>忘记密码?</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
